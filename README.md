@@ -7,4 +7,4 @@ To run the server, goto SendLog directory, type in terminal :
 
  `python SendTime.py`
 
-Then goto [127.0.0.1:8001/](127.0.0.1:8001/) on your browser
+Then goto [127.0.0.1:8001](127.0.0.1:8001) in browser
