@@ -15,9 +15,9 @@ def event_stream():
 	# Open the log file
 	log_dir = "../../bin/"				# Log file directory
 	log_name = "scilab-log-0.txt"		# Log file name
-	# Open the lof file in append + read mode
-	# So that the file pointer is at the end of the file
-	logfile = open(log_dir + log_name, "a+")
+	logfile = open(log_dir + log_name, "r")
+	# Seek file pointer to the end of file
+	logfile.seek(0,2)
 	# Start sending log
 	LOOK_DELAY = 0.01					# Delay time to look for new line (in s)
 	while 1:
